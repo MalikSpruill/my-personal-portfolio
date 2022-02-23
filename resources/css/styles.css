@@ -105,6 +105,10 @@ section h2, footer h2 {
     line-height: 1.5;
 }
 
+#about-me div p{
+    width: 90%;
+}
+
 #work {
     justify-content: center;
 }
@@ -128,6 +132,13 @@ section h2, footer h2 {
 #work #projects > div img {
     width: 100%;
     object-fit: contain;
+    opacity: 0.8;
+}
+
+#work #projects > div img:hover {
+    opacity: 1;
+    transition: 0.4s;
+    cursor: crosshair;
 }
 
 #work #projects > div:first-child {
@@ -139,6 +150,47 @@ section h2, footer h2 {
 #work #projects > div:first-child img {
     width: 70%;
 }
+
+#resume {
+    justify-content: center;
+}
+
+#resume h2 {
+    flex: 0 10%;
+}
+
+#resume #info {
+    flex: 0 60%;
+    justify-content: space-evenly;
+}
+
+#resume #info div {
+    height: 300px;
+    flex: 0 30%;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+#resume #info div h3 {
+    font-size: 1.4rem;
+    border-top: 2px solid rgb(221, 83, 3);
+    padding: 5px;
+}
+
+#resume #info div p {
+    padding-top: 10%;
+    line-height: 1.5;
+}
+
+#resume #info > div:last-child p {
+    word-spacing: 50px;
+    line-height: 50px;
+    font-weight: 500;
+
+}
+
+
 
 
 .flex-container {
