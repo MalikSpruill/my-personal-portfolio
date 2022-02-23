@@ -1,0 +1,152 @@
+:root {
+    --primary-color: rgb(252, 249, 248);
+    --secondary-color: linear-gradient(180deg, rgb(255, 201, 102), rgb(243, 215, 57));
+    --color-black: #000;
+    --link-hover: rgb(226, 31, 31);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--primary-color);
+}
+
+header {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header nav {
+    justify-content: space-between;
+    padding: 5px 5px;
+    background:  var(--secondary-color);
+    z-index: 9999;
+
+}
+
+header nav h1 {
+    font-size: 3rem;
+}
+
+header nav ul {
+    flex: 0 20%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: bold;
+    padding: 5px 5px;
+    transition-duration: 0.2s;
+    border-radius: 25%;
+    
+}
+
+header nav ul li a:active {
+    opacity: 0.4;
+    transition-duration: 0.1s;
+  
+}
+
+header nav ul li a:hover {
+    border: 2px solid var(--link-hover);
+}
+
+section:not(#hero), footer {
+    padding: 0 20px 40px 20px;
+}
+
+section:not(#hero) h2:hover, footer h2:hover {
+    opacity: 0.6;
+}
+
+section h2, footer h2 {
+    font-size: 2rem;
+}
+
+#hero {
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    background-image: url(../images/hero-picture.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    margin-bottom: 40px;
+}
+
+#hero h2 {
+    color: white;
+    padding: 10px;
+    flex: 0 20%;
+}
+
+#about-me {
+   justify-content: center;
+}
+
+#about-me h2 {
+    flex: 0 10%;
+}
+
+#about-me div {
+    flex: 0 60%;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+#work {
+    justify-content: center;
+}
+
+#work h2 {
+    flex: 0 10%;
+}
+
+#work #projects {
+    flex: 0 60%;
+    flex-wrap: wrap;
+}
+
+#work #projects > div {
+    width: 45%;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+#work #projects > div img {
+    width: 100%;
+    object-fit: contain;
+}
+
+#work #projects > div:first-child {
+    width: 100%;
+    text-align: center;
+    margin: 10 0;
+}
+
+#work #projects > div:first-child img {
+    width: 70%;
+}
+
+
+.flex-container {
+    display: flex;
+}
+
+.border {
+    border-left: 2px solid var(--color-black);
+}
+
+
