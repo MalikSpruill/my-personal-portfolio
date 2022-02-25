@@ -129,8 +129,8 @@ section h2, footer h2 {
 
 #work #projects > div {
     width: 45%;
-    height: 300px;
-    margin: 10px;
+    height: 260px;
+    margin: 10px 10px 5px 10px;
     overflow: hidden;
 }
 
@@ -150,6 +150,7 @@ section h2, footer h2 {
     width: 100%;
     text-align: center;
     margin: 10 0;
+    height: 300px;
 }
 
 #work #projects > div:first-child img {
