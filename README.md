@@ -16,5 +16,5 @@ https://malikspruill.github.io/my-personal-portfolio/
 
 <br />
 
-#### Computer and larger screens view
+#### Phone and smaller screens view
 <img src="./resources/images/personal-portfolio-575.png" width="600px" />
