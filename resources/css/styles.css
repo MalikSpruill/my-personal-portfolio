@@ -19,6 +19,7 @@ html {
     background-color: var(--primary-color);
 }
 
+/* Header section begins here */
 header {
     flex-direction: column;
     flex-wrap: wrap;
@@ -39,7 +40,7 @@ header nav h1 {
 
 header nav ul {
     flex: 0 30%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
@@ -49,10 +50,9 @@ header nav ul li a {
     text-decoration: none;
     color: var(--color-black);
     font-weight: bold;
-    padding: 5px 0;
+    padding: 5px 10px;px; ;
     transition-duration: 0.2s;
     border-radius: 25%;
-    
 }
 
 header nav ul li a:active {
@@ -77,6 +77,7 @@ section h2, footer h2 {
     font-size: 2rem;
 }
 
+/* Hero section begins here */
 #hero {
     justify-content: flex-end;
     align-items: flex-end;
@@ -87,6 +88,7 @@ section h2, footer h2 {
     background-repeat: no-repeat;
     height: 30vh;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 #hero h2 {
@@ -95,6 +97,26 @@ section h2, footer h2 {
     flex: 0 20%;
 }
 
+#hero div {
+    position: relative;
+    bottom: -40px;
+    left: 50px;
+    flex: 0 80%;
+    height: auto;
+    align-self: flex-end;
+    justify-self: flex-start;
+}
+
+#hero div img {
+    width: 12%;
+    height: auto;
+    border-radius: 45%;
+    opacity: 0.8;
+}
+
+/* Header and hero section ends here */
+
+/* about me section begins here */
 #about-me {
    justify-content: center;
    height: 100%;
@@ -102,6 +124,7 @@ section h2, footer h2 {
 
 #about-me h2 {
     flex: 0 10%;
+    word-spacing: 10px;
 }
 
 #about-me div {
@@ -113,7 +136,9 @@ section h2, footer h2 {
 #about-me div p{
     width: 90%;
 }
+/* about me section ends here */
 
+/* work section begins here */
 #work {
     justify-content: center;
     height: 100%;
@@ -157,7 +182,9 @@ section h2, footer h2 {
 #work #projects > div:first-child img {
     width: 70%;
 }
+/* work section ends here */
 
+/* resume section begins here */
 #resume {
     justify-content: center;
     height: 100%;
@@ -205,7 +232,9 @@ section h2, footer h2 {
     font-weight: 500;
 
 }
+/* resume section ends here */
 
+/* contact me section begins here */
 #contact-me {
     justify-content: center;
     height: 100%;
@@ -228,7 +257,9 @@ section h2, footer h2 {
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
 }
+/* contact me section ends here */
 
+/* class selectors begins here */
 .flex-container {
     display: flex;
 }
@@ -236,24 +267,28 @@ section h2, footer h2 {
 .border {
     border-left: 5px solid var(--color-black);
 }
+/* class selectors ends here */
 
 /* Media Queries section begins here for mobile-responsiveness */
-
 @media screen and (max-width: 1200px) {
 
     header nav ul {
-        flex: 0 33%;
+        flex: 0 40%;
         margin-right: 15px;
     }
-    
+
     header nav ul li a {
-        flex: 0 30%;
-        
+        font-size: 0.9rem;
+    }
+    
+    #hero div img {
+        width: 15%;
     }
 
     #about-me h2 {
         flex: 0 15%;
         align-self: center;
+        word-spacing: 0; 
     }
     
     #about-me div {
@@ -327,8 +362,16 @@ section h2, footer h2 {
     
     header nav ul li a {
         flex: 0 30%;
-        font-size: 0.85rem;
+        font-size: 0.80rem;
         
+    }
+
+    #hero div {
+        flex: 0 75%;
+    }  
+    
+    #hero div img {
+        width: 20%;
     }
 
     section:not(#hero), footer {
@@ -377,4 +420,75 @@ section h2, footer h2 {
         font-size: 1.1rem;
     }
 } 
+
+@media screen and (max-width: 575px) {
+
+    header nav h1 {
+        font-size: 1.8rem;
+    }
+
+    header nav ul li a {
+        font-size: 0.8rem;
+        padding: 5px 5px; 
+    }
+
+    #hero div {
+        flex: 0 65%;
+        left: 10px;
+    }
+    
+    #hero div img {
+        width: 25%;
+    }
+
+
+    #about-me div p{
+        font-size: 0.9rem;
+    }
+    
+    #work #projects > div {
+        width: 45%;
+        height: auto;
+    }
+    
+    #work #projects > div:first-child {
+        height: 250px;
+    }
+    
+    #work #projects > div:first-child img {
+        width: 80%;
+    }
+
+    #resume #info {
+        flex-direction: column;
+    }
+    
+    #resume #info > div {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: solid 1px black;
+    
+    }
+
+    #resume #info div h3 {
+        border: 1px solid var(--heading-responsive);
+        border-radius: 25%;
+        align-self: center;
+        flex: 0 10%;
+        font-size: 1.2rem;
+    
+    }
+
+    #resume #info div > div {
+        flex: 0 70%;
+        
+     }
+
+     #resume #info div:nth-child(2) div p {
+         border: none;
+     }
+}
+
+/* Media Queries section ends here for mobile-responsiveness */
 
