@@ -176,11 +176,11 @@ section h2, footer h2 {
     width: 100%;
     text-align: center;
     margin: 10 0;
-    height: 300px;
+    height: 350px;
 }
 
 #work #projects > div:first-child img {
-    width: 70%;
+    width: 80%;
 }
 /* work section ends here */
 
